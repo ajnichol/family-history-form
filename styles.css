@@ -1,0 +1,112 @@
+
+.center{
+  text-align: center;
+}
+
+#main-container{
+  border: solid 1px #a3a3ff;
+  width: 60%;
+}
+
+#main-container p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/**family composition section**/
+
+.form-heading{
+  background-color: #a3a3ff;
+}
+
+.form-heading input{
+  display: inline-block;
+}
+
+.form-heading h5{
+  margin-top: 0px;
+  padding: 2px;
+}
+
+#family-composition-container{
+  border: solid 1px #a3a3ff;
+  width: 60%;
+  display: inline-block;
+}
+
+#family-composition-container form{
+  display: inline-block;
+}
+
+#family-composition-container h5{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+#family-composition-container h6{
+  display: inline-block;
+  padding: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+.form-body p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+select{
+  margin-left: 90px;
+  width: 100px;
+}
+
+input{
+  display: block;
+}
+
+.criteria{
+  display: inline-block;
+}
+
+#siblings-heading form{
+  margin-right: 120px;
+}
+
+#children-heading form{
+  margin-right: 120px;
+}
+
+/**marital status section**/
+
+#parents-marital-container{
+  border: solid 1px #a3a3ff;
+  width: 35%;
+  display: inline-block;
+}
+
+#parents-marital-container h5{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 2px;
+}
+
+#parents-marital-container input{
+  display: inline-block;
+}
+
+/**bottom section**/
+#bottom-section h5{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  float: left;
+}
+
+#bottom-section input{
+  display: inline-block;
+}
+
+textarea{
+  width: 99%;
+}
