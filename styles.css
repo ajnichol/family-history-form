@@ -110,3 +110,17 @@ input{
 textarea{
   width: 99%;
 }
+
+/**basic media query**/
+
+@media screen and (max-width: 600px) {
+  #main-container{
+    width: 100%;
+  }
+  #family-composition-container{
+    width: 100%;
+  }
+  #parents-marital-container{
+    width: 100%;
+  }
+}
