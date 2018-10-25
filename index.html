@@ -31,65 +31,60 @@
         </form>
       </div>
       <div class="form-body">
-        <div class="criteria">
-          <p>Name</p>
-          <p>Occupation</p>
-          <p>Education</p>
-          <p>General Health</p>
-        </div>
         <form>
-          <input type="text" name="parents name">
-          <input type="text" name="parents occupation">
-          <input type="text" name="parents education">
-          <input type="text" name="parents general health">
-        </form>
-        <form>
-          <input type="text" name="parents name">
-          <input type="text" name="parents occupation">
-          <input type="text" name="parents education">
-          <input type="text" name="parents general health">
+          <label for="parents-name" id="parents-name-label">Name</label>
+          <input id="parents-name" type="text" name="parents name">
+          <input id="parents-name" type="text" name="parents name">
+          <br/>
+          <label for="parents-occupation" id="parents-occupation-label">Occupation</label>
+          <input id="parents-occupation" type="text" name="parents occupation">
+          <input id="parents-occupation" type="text" name="parents occupation">
+          <br/>
+          <label for="parents-education" id="parents-education-label">Education</label>
+          <input id="parents-education" type="text" name="parents education">
+          <input id="parents-education" type="text" name="parents education">
+          <br/>
+          <label for="parents-general-health" id="parents-general-health-label">General Health</label>
+          <input id="parents-general-health" type="text" name="parents general health">
+          <input id="parents-general-health" type="text" name="parents general health">
         </form>
       </div>
       <div class="form-heading" id="siblings-heading">
         <h6>Siblings</h6>
         <form>
-          <input type="checkbox" name="siblings" value="None">None
+          <input id="siblings-none" type="checkbox" name="siblings" value="None">
+          <label for="siblings-none">None</label>
         </form>
         <h6>Names & Ages</h6>
       </div>
       <div class="form-body">
-        <div class="criteria">
-          <p># of brothers:</p>
-          <p># of sisters:</p>
-        </div>
         <form>
-          <input type="text" name="number of brothers" size="1">
-          <input type="text" name="number of sisters" size="1">
-        </form>
-        <form>
-          <input type="text" name="name and age of brother(s)" size="40">
-          <input type="text" name="name and age of sister(s)" size="40">
+          <label for="number-of-brother(s)" id="brothers-label"># of brothers:</label>
+          <input id="number-of-brother(s)" type="text" name="number of brother(s)" size="1">
+          <input aria-label="name-and-age-of-brother(s)" type="text" name="name and age of brother(s)" size="40">
+          <br/>
+          <label for="number-of-sister(s)" id="sisters-label"># of sisters:</label>
+          <input id="number-of-sister(s)" type="text" name="number of sister(s)" size="1">
+          <input aria-label="name-and-age-of-sister(s)" type="text" name="name and age of sister(s)" size="40">
         </form>
       </div>
       <div class="form-heading" id="children-heading">
         <h6>Children</h6>
         <form>
-          <input type="checkbox" name="children" value="None">None
+          <input id="children-none" type="checkbox" name="children" value="None">
+          <label for="children-none">None</label>
         </form>
         <h6>Names & Ages</h6>
       </div>
       <div class="form-body">
-        <div class="criteria">
-          <p># of daughters:</p>
-          <p># of sons:</p>
-        </div>
         <form>
-          <input type="text" name="number of daughters" size="1">
-          <input type="text" name="number of sons" size="1">
-        </form>
-        <form>
-          <input type="text" name="name and age of daughter(s)" size="40">
-          <input type="text" name="name and age of son(s)" size="40">
+          <label for="number-of-daughter(s)"># of daughters:</label>
+          <input id="number-of-daughter(s)" type="text" name="number of daughter(s)" size="1">
+          <input aria-label="name-and-age-of-daughter(s)" type="text" name="name and age of daughter(s)" size="40">
+          <br/>
+          <label for="number-of-son(s)" id="sons-label"># of sons:</label>
+          <input id="number-of-son(s)" type="text" name="number of son(s)" size="1">
+          <input aria-label="name-and-age-of-son(s)" type="text" name="name and age of son(s)" size="40">
         </form>
       </div>
     </div>
@@ -98,23 +93,38 @@
         <h5>Parent's Marital Status</h5>
       </div>
       <form>
-        <input type="checkbox" name="single" value="Single, never married">Single, never married <br/>
-        <input type="checkbox" name="Engaged" value="Engaged">Engaged
-        <input type="text" name="number of months" size="1"> months<br/>
-        <input type="checkbox" name="Married for" value="Married for">Married for
-        <input type="text" name="number of years" size="1"> years<br/>
-        <input type="checkbox" name="Divorced for" value="Divorced for">Divorced for
-        <input type="text" name="number of years" size="1"> years<br/>
-        <input type="checkbox" name="Separated for" value="Separated for">Separated for
-        <input type="text" name="number of years" size="1"> years<br/>
-        <input type="checkbox" name="Divorce in process" value="Divorce in process">Divorce in process
-        <input type="text" name="number of months" size="1"> months<br/>
-        <input type="checkbox" name="Live in for" value="Live in for">Live in for
-        <input type="text" name="number of years" size="1"> years<br/>
-        <input type="checkbox" name="prior marriages (self)" value="prior marriages (self)">
-        <input type="text" name="number of prior marriages (self)" size="1"> prior marriages (self)<br/>
-        <input type="checkbox" name="prior marriages (partner)" value="prior marriages (partner)">
-        <input type="text" name="number of prior marriages (partner)" size="1"> prior marriages (partner)
+        <input id="parents-single" type="checkbox" name="single" value="Single, never married">
+        <label for="parents-single">Single, never married</label> <br/>
+        <input id="parents-engaged" type="checkbox" name="Engaged" value="Engaged">
+        <label for="parents-engaged">Engaged</label>
+        <input id="months-engaged" type="text" name="number of months" size="1">
+        <label for="months-engaged">months</label> <br/>
+        <input id="parents-married" type="checkbox" name="Married for" value="Married for">
+        <label for="parents-married">Married for</label>
+        <input id="years-married" type="text" name="number of years" size="1">
+        <label for="years-married">years</label><br/>
+        <input id="parents-divorced" type="checkbox" name="Divorced for" value="Divorced for">
+        <label for="parents-divorced">Divorced for</label>
+        <input id="years-divorced" type="text" name="number of years" size="1">
+        <label for="years-divorced">years</label><br/>
+        <input id="parents-separated" type="checkbox" name="Separated for" value="Separated for">
+        <label for="parents-separated">Separated for</label>
+        <input id="years-separated" type="text" name="number of years" size="1">
+        <label for="years-separated">years</label><br/>
+        <input id="parents-divorce-in-process" type="checkbox" name="Divorce in process" value="Divorce in process">
+        <label for="parents-divorce-in-process">Divorce in process</label>
+        <input id="months-divorce-in-process" type="text" name="number of months" size="1">
+        <label for="months-divorce-in-process">months</label><br/>
+        <input id="parents-live-in" type="checkbox" name="Live in for" value="Live in for">
+        <label for="parents-live-in">Live in for</label>
+        <input id="years-lived-in" type="text" name="number of years" size="1">
+        <label for="years-lived-in">years</label><br/>
+        <input aria-label="prior-marriages-self" type="checkbox" name="prior marriages (self)" value="prior marriages (self)">
+        <input id="number-of-prior-marriages-self" type="text" name="number of prior marriages (self)" size="1">
+        <label for="number-of-prior-marriages-self">prior marriages (self)</label><br/>
+        <input aria-label="prior-marriages-partner" type="checkbox" name="prior marriages (partner)" value="prior marriages (partner)">
+        <input id="number-of-prior-marriages-partner" type="text" name="number of prior marriages (partner)" size="1">
+        <label for="number-of-prior-marriages-partner">prior marriages (partner)</label>
       </form>
       <br/>
       <br/>
@@ -130,14 +140,22 @@
       <div id="stressors">
         <h5>Stressors:</h5>
         <form>
-          <input type="checkbox" name="None reported" value="None">None reported
-          <input type="checkbox" name="Abuse" value="Abuse">Abuse
-          <input type="checkbox" name="Illness" value="Illness">Illness
-          <input type="checkbox" name="Death" value="Death">Death
-          <input type="checkbox" name="Move" value="Move">Move
-          <input type="checkbox" name="Separation or divorce" value="Separation or divorce">Separation or divorce
-          <input type="checkbox" name="Military deployment" value="Military deployment">Military deployment
-          <input type="checkbox" name="Other" value="Other">Other
+          <input id="stressors-none" type="checkbox" name="None reported" value="None">
+          <label for="stressors-none">None reported</label>
+          <input id="abuse" type="checkbox" name="Abuse" value="Abuse">
+          <label for="abuse">Abuse</label>
+          <input id="illness" type="checkbox" name="Illness" value="Illness">
+          <label for="illness">Illness</label>
+          <input id="death" type="checkbox" name="Death" value="Death">
+          <label for="death">Death</label>
+          <input id="move" type="checkbox" name="Move" value="Move">
+          <label for="move">Move</label>
+          <input id="separation-or-divorce" type="checkbox" name="Separation or divorce" value="Separation or divorce">
+          <label for="separation-or-divorce">Separation or divorce</label>
+          <input id="military-deployment" type="checkbox" name="Military deployment" value="Military deployment">
+          <label for="military-deployment">Military deployment</label>
+          <input id="other" type="checkbox" name="Other" value="Other">
+          <label for="other">Other</label>
         </form>
       </div>
       <form>
@@ -146,7 +164,8 @@
       <div id="mental-health">
         <h5>Family history of Mental Health Issues/Substance Abuse/Other::</h5>
         <form>
-          <input type="checkbox" name="None reported" value="None">None reported
+          <input id="mental-health-none" type="checkbox" name="None reported" value="None">
+          <label for="mental-health-none">None reported</label>
         </form>
       </div>
       <form>

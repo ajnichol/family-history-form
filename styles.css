@@ -5,7 +5,7 @@
 
 #main-container{
   border: solid 1px #a3a3ff;
-  width: 60%;
+  width: 62%;
 }
 
 #main-container p{
@@ -57,17 +57,41 @@
   margin-bottom: 0px;
 }
 
+.form-body input{
+  display: inline-block;
+}
+
+#parents-name-label{
+  margin-right: 79px
+}
+
+#parents-occupation-label{
+  margin-right: 43px
+}
+
+#parents-education-label{
+  margin-right: 52px
+}
+
+#parents-general-health-label{
+  margin-right: 20px
+}
+
+#brothers-label{
+  margin-right: 10px;
+}
+
+#sisters-label{
+  margin-right: 22px;
+}
+
+#sons-label{
+  margin-right: 34px;
+}
+
 select{
   margin-left: 90px;
   width: 100px;
-}
-
-input{
-  display: block;
-}
-
-.criteria{
-  display: inline-block;
 }
 
 #siblings-heading form{
